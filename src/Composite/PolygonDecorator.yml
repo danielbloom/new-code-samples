@@ -1,0 +1,5 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\PolygonDecoratorInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\PolygonDecorator
+    calls:
+    - [setvendorPhayesGeoPHP, ['@Phayes\GeoPHP\GeoPHPInterface']]

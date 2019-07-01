@@ -1,0 +1,7 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Image\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Image\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeImageFactory, ['@AreaService\NHDS\MV2\Area\Composite\Image\FactoryInterface']]
+    - [setMV2AreaCompositeThumborImageBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\ThumborImage\Builder\FactoryInterface']]

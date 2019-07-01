@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Integer\Map\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Integer\Map\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeIntegerMapFactory, ['@AreaService\NHDS\MV2\Area\Composite\Integer\Map\FactoryInterface']]

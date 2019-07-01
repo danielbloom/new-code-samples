@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\PriceRangeDetailInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\PriceRangeDetail
+    shared: false

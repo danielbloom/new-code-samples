@@ -1,0 +1,5 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\GeoJsonPointDecoratorInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\GeoJsonPointDecorator
+    calls:
+    - [setvendorPhayesGeoPHP, ['@Phayes\GeoPHP\GeoPHPInterface']]

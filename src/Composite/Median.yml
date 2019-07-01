@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\MedianInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Median
+    shared: false

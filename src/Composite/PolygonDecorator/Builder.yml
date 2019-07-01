@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\PolygonDecorator\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\PolygonDecorator\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositePolygonDecoratorFactory, ['@AreaService\NHDS\MV2\Area\Composite\PolygonDecorator\FactoryInterface']]

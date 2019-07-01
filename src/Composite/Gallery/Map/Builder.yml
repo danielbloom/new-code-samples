@@ -1,0 +1,7 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Gallery\Map\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Gallery\Map\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeGalleryBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Gallery\Builder\FactoryInterface']]
+    - [setMV2AreaCompositeGalleryMapFactory, ['@AreaService\NHDS\MV2\Area\Composite\Gallery\Map\FactoryInterface']]

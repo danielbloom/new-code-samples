@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\CenterInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Center
+    shared: false

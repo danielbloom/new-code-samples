@@ -1,0 +1,5 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\HttpClientInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\HttpClient
+    calls:
+    - [setvendorGuzzleHttpGuzzle, ['@GuzzleHttp\ClientInterface']]

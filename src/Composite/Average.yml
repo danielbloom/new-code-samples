@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\AverageInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Average
+    shared: false

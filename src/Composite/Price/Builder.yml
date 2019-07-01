@@ -1,0 +1,8 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Price\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Price\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositePriceFactory, ['@AreaService\NHDS\MV2\Area\Composite\Price\FactoryInterface']]
+    - [setMV2AreaCompositePriceRangeDetailBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\PriceRangeDetail\Builder\FactoryInterface']]
+    - [setMV2AreaCompositeFrequencyMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Frequency\Map\Builder\FactoryInterface']]

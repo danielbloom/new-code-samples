@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\BoundingBoxInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\BoundingBox
+    shared: false

@@ -1,0 +1,5 @@
+services:
+  AreaService\NHDS\MV2\Area\CommunityInterface:
+    class: AreaService\NHDS\MV2\Area\Community
+    public: false
+    shared: false

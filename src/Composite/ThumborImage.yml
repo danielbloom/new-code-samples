@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\ThumborImageInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\ThumborImage
+    shared: false

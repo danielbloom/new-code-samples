@@ -1,0 +1,9 @@
+services:
+  AreaService\NHDS\MV2\Area\Community\Map\RepositoryInterface:
+    class: AreaService\NHDS\MV2\Area\Community\Map\Repository
+    calls:
+    - [setMV2AreaCommunityMapFactory, ['@AreaService\NHDS\MV2\Area\Community\Map\FactoryInterface']]
+    - [setMV2AreaCommunityMap, ['@AreaService\NHDS\MV2\Area\Community\MapInterface']]
+    - [setDoctrineDBALConnectionDecoratorRepository, ['@AreaService\Doctrine\DBAL\Connection\Decorator\RepositoryInterface']]
+    - [setMV2AreaCommunityMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Community\Map\Builder\FactoryInterface']]
+    - [setSearchCriteriaDoctrineDBALQueryQueryBuilderBuilderFactory, ['@AreaService\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\FactoryInterface']]

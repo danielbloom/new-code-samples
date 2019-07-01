@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Average\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Average\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeAverageFactory, ['@AreaService\NHDS\MV2\Area\Composite\Average\FactoryInterface']]

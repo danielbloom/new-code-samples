@@ -1,0 +1,7 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\BoundingBox\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\BoundingBox\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeBoundingBoxFactory, ['@AreaService\NHDS\MV2\Area\Composite\BoundingBox\FactoryInterface']]
+    - [setMV2AreaCompositeCenterBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Center\Builder\FactoryInterface']]

@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\RoomRangeInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\RoomRange
+    shared: false

@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\RoomRange\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\RoomRange\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeRoomRangeFactory, ['@AreaService\NHDS\MV2\Area\Composite\RoomRange\FactoryInterface']]

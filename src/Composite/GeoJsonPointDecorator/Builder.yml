@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\GeoJsonPointDecorator\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\GeoJsonPointDecorator\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeGeoJsonPointDecoratorFactory, ['@AreaService\NHDS\MV2\Area\Composite\GeoJsonPointDecorator\FactoryInterface']]

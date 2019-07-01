@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\HousingInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Housing
+    shared: false

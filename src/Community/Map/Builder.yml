@@ -1,0 +1,8 @@
+services:
+  AreaService\NHDS\MV2\Area\Community\Map\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Community\Map\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCommunityBuilderFactory, ['@AreaService\NHDS\MV2\Area\Community\Builder\FactoryInterface']]
+    - [setMV2AreaCommunityMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Community\Map\Builder\FactoryInterface']]
+    - [setMV2AreaCommunityMapFactory, ['@AreaService\NHDS\MV2\Area\Community\Map\FactoryInterface']]

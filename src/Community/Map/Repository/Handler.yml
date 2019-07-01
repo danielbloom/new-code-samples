@@ -1,0 +1,7 @@
+services:
+  AreaService\NHDS\MV2\Area\Community\Map\Repository\HandlerInterface:
+    class: AreaService\NHDS\MV2\Area\Community\Map\Repository\Handler
+    shared: false
+    calls:
+    - [setNHDSMV2AreaCommunityMapRepository, ['@AreaService\NHDS\MV2\Area\Community\Map\RepositoryInterface']]
+    - [setSearchCriteriaServerRequestBuilderFactory, ['@AreaService\SearchCriteria\ServerRequest\Builder\FactoryInterface']]

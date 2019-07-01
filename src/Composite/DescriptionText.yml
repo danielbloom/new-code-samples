@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\DescriptionTextInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\DescriptionText
+    shared: false

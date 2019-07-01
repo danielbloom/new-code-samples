@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Median\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Median\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeMedianFactory, ['@AreaService\NHDS\MV2\Area\Composite\Median\FactoryInterface']]

@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\PriceRangeDetail\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\PriceRangeDetail\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositePriceRangeDetailFactory, ['@AreaService\NHDS\MV2\Area\Composite\PriceRangeDetail\FactoryInterface']]

@@ -1,0 +1,10 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Housing\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Housing\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeHousingFactory, ['@AreaService\NHDS\MV2\Area\Composite\Housing\FactoryInterface']]
+    - [setMV2AreaCompositeRangeBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Range\Builder\FactoryInterface']]
+    - [setMV2AreaCompositeAverageBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Average\Builder\FactoryInterface']]
+    - [setMV2AreaCompositeMedianBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Median\Builder\FactoryInterface']]
+    - [setMV2AreaCompositeStringPrimitiveMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\StringPrimitive\Map\Builder\FactoryInterface']]

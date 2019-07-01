@@ -1,0 +1,4 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\PriceInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Price
+    shared: false

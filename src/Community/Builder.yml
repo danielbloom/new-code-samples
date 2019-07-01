@@ -1,0 +1,14 @@
+services:
+  AreaService\NHDS\MV2\Area\Community\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Community\Builder
+    shared: false
+    calls:
+      - [setMV2AreaCommunityFactory, ['@AreaService\NHDS\MV2\Area\Community\FactoryInterface']]
+      - [setMV2AreaCommunityMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Community\Map\Builder\FactoryInterface']]
+      - [setMV2AreaCompositeCenterBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Center\Builder\FactoryInterface']]
+      - [setMV2AreaCompositePolygonDecoratorBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\PolygonDecorator\Builder\FactoryInterface']]
+      - [setMV2AreaCompositePriceBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Price\Builder\FactoryInterface']]
+      - [setMV2AreaCompositeFrequencyMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Frequency\Map\Builder\FactoryInterface']]
+      - [setMV2AreaCompositeImageMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Image\Map\Builder\FactoryInterface']]
+      - [setMV2AreaCompositeStringPrimitiveMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\StringPrimitive\Map\Builder\FactoryInterface']]
+      - [setMV2AreaCompositeHousingBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\Housing\Builder\FactoryInterface']]

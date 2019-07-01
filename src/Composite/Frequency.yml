@@ -1,0 +1,3 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\FrequencyInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Frequency

@@ -1,0 +1,7 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Local\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Local\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeLocalFactory, ['@AreaService\NHDS\MV2\Area\Composite\Local\FactoryInterface']]
+    - [setMV2AreaCompositeStringPrimitiveMapBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\StringPrimitive\Map\Builder\FactoryInterface']]

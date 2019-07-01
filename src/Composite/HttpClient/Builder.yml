@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\HttpClient\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\HttpClient\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeHttpClientFactory, ['@AreaService\NHDS\MV2\Area\Composite\HttpClient\FactoryInterface']]

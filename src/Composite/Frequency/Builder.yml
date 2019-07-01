@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Frequency\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Frequency\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeFrequencyFactory, ['@AreaService\NHDS\MV2\Area\Composite\Frequency\FactoryInterface']]

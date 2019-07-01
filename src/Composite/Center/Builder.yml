@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Center\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Center\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeCenterFactory, ['@AreaService\NHDS\MV2\Area\Composite\Center\FactoryInterface']]

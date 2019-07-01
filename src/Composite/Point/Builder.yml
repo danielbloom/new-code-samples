@@ -1,0 +1,6 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Point\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Point\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositePointFactory, ['@AreaService\NHDS\MV2\Area\Composite\Point\FactoryInterface']]

@@ -1,0 +1,7 @@
+services:
+  AreaService\NHDS\MV2\Area\Composite\Description\BuilderInterface:
+    class: AreaService\NHDS\MV2\Area\Composite\Description\Builder
+    shared: false
+    calls:
+    - [setMV2AreaCompositeDescriptionFactory, ['@AreaService\NHDS\MV2\Area\Composite\Description\FactoryInterface']]
+    - [setMV2AreaCompositeDescriptionTextBuilderFactory, ['@AreaService\NHDS\MV2\Area\Composite\DescriptionText\Builder\FactoryInterface']]
